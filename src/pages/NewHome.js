@@ -37,7 +37,7 @@ const NewHome = (props) => {
     }
 
     return (
-        <div className="form-container">
+        <div>
             <Form className="newForm" onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicAddress">
                     <Form.Label>Street Address</Form.Label>
