@@ -22,7 +22,7 @@ function App(props) {
 
   const addHome = async (newHome) => {
     await fetch('http://localhost:3000/homes', {
-      method: 'POST', 
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },

@@ -11,12 +11,6 @@
   text-decoration: none;
 }
 
-/* .footer {
-  color: white;
-  text-align: center;
-  background-color: #47595c;
-  margin-top: -50;
-} */
 footer {
   position: sticky;
   display: flex;
@@ -39,14 +33,19 @@ footer {
 }
 
 .cards {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   text-align: center;
   color: #47595c;
   margin: 0 auto;
+  padding: 45px;
 }
 
 .card-columns {
   display: inline-block;
   margin: 0 auto;
+  width: 100px;
 }
 
 .title {
@@ -64,8 +63,9 @@ footer {
   width: 35%;
 }
 
-.formContainer {
+/* /* .cardContainer {
   display: flex;
-  margin-top: 50%;
-  margin-bottom: 50%;
-}
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+/* } */

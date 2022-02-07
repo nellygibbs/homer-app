@@ -1,6 +1,6 @@
-import {Form, Button} from 'react-bootstrap';
-import {useState} from 'react';
-import {useHistory} from 'react-router-dom';
+import { Form, Button } from 'react-bootstrap';
+import { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 const NewHome = (props) => {
     const history = useHistory();
@@ -14,22 +14,22 @@ const NewHome = (props) => {
     const [hoa, setHoa] = useState(false)
 
     const stateAbbreviations = [
-        'AL','AK','AS','AZ','AR','CA','CO','CT','DE','DC','FM','FL','GA',
-        'GU','HI','ID','IL','IN','IA','KS','KY','LA','ME','MH','MD','MA',
-        'MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY','NC','ND',
-        'MP','OH','OK','OR','PW','PA','PR','RI','SC','SD','TN','TX','UT',
-        'VT','VI','VA','WA','WV','WI','WY'
-       ];
+        'AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FM', 'FL', 'GA',
+        'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA',
+        'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND',
+        'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT',
+        'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY'
+    ];
 
     const handleSubmit = async (event) => {
         event.preventDefault()
         await props.addHome({
-            address, 
-            city, 
-            state, 
-            bedrooms, 
-            bathrooms, 
-            image, 
+            address,
+            city,
+            state,
+            bedrooms,
+            bathrooms,
+            image,
             asking,
             hoa
         })
