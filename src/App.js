@@ -10,7 +10,7 @@ function App(props) {
   const [homes, setHomes] = useState([])
   const history = useHistory();
   const getHomes = async () => {
-    const response = await fetch('http://localhost:3000/homes')
+    const response = await fetch('https://the-homer-app.herokuapp.com/homes')
     const data = await response.json()
     console.log(data);
     setHomes(data);
@@ -21,8 +21,8 @@ function App(props) {
   }, [])
 
   const addHome = async (newHome) => {
-    await fetch('http://localhost:3000/homes', {
-      method: 'POST',
+    await fetch('https://the-homer-app.herokuapp.com/homes', {
+      method: 'POST', 
       headers: {
         'Content-Type': 'application/json'
       },
