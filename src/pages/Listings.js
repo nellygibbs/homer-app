@@ -2,7 +2,7 @@ import ListingCard from '../components/ListingCard';
 
 const Listings = (props) => {
     return(
-        <div>
+        <div className="cards">
             {props.homes.map((item)=> {
                 return <ListingCard key={item._id} home= {item} />
             })}

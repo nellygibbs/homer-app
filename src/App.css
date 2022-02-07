@@ -7,6 +7,49 @@
   text-decoration: none;
 }
 
+/* .footer {
+  color: white;
+  text-align: center;
+  background-color: #47595c;
+  margin-top: -50;
+} */
+footer {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 100vh;
+  padding-top: 20px;
+  color: white;
+  background-color: #678185;
+}
+
+.footer-style {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.github-icon {
+  margin-right: 10px;
+}
+
+.cards {
+  margin: 0 auto;
+  text-align: center;
+  color: #47595c;
+  margin: 0 auto;
+}
+
+.card-columns {
+  display: inline-block;
+}
+
+.title {
+  font-weight: bold;
+  color: #47595c;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -1,10 +1,10 @@
 import {Card} from "react-bootstrap";
 const ListingCard = (props) => {
     return(
-<Card style={{ width: '18rem' }}>
+<Card className="card-columns" style={{ width: '18rem' }}>
   <Card.Img variant="top" src={props.home.image}/>
   <Card.Body>
-    <Card.Title>{props.home.address}</Card.Title>
+    <Card.Title className="title">{props.home.address}</Card.Title>
     <Card.Text>
         {props.home.city},{props.home.state}
     </Card.Text>
