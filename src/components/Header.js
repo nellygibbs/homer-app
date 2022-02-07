@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 function Header() {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar className="nav" bg="dark" variant="dark" expand="lg">
             <Container>
                 <Link id="newHomeLink" to='/'><Navbar.Brand>Homer</Navbar.Brand></Link>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />

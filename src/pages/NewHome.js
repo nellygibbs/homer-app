@@ -37,8 +37,8 @@ const NewHome = (props) => {
     }
 
     return (
-        <div>
-            <Form onSubmit={handleSubmit}>
+        <div className="form-container">
+            <Form className="newForm" onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicAddress">
                     <Form.Label>Street Address</Form.Label>
                     <Form.Control value={address} onChange={(event) => setAddress(event.target.value)} type="text" placeholder="Enter address"></Form.Control>
